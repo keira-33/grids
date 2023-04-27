@@ -1,6 +1,8 @@
 # grids
 An Introduction to grid layouts
 
+Fork/Clone this starter code
+
 
 
 Live site:
