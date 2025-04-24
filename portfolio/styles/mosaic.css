@@ -1,1 +1,40 @@
 /* add grid styles here */
+.portfolio {
+    display: grid;
+    height: 100%;
+    /* 8 rows each take up same fraction of available space */
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+}
+.portfolio-item{
+    background-color: red;
+    color: aquamarine;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    transition: all ease-in-out 300ms;
+}
+.portfolio-item.small {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+/* a medium item will span two columns/rows */
+.portfolio-item.medium {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.portfolio-item.large{
+    grid-row: span 3;
+    grid-column: span 3;
+}
+.portfolio-item.tall{
+    grid-row: span 3;
+    grid-column: span 2;
+}
+.portfolio-item.wide{
+    grid-row: span 2;
+    grid-column: span 3;
+}
